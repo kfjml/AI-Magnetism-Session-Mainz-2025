@@ -1,0 +1,1 @@
+# AI-Magnetism-Session-Mainz-2025
