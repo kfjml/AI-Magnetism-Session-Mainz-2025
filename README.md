@@ -19,7 +19,7 @@ git clone https://github.com/kfjml/AI-Magnetism-Session-Mainz-2025
 
 If you do not have `git`, go to the main page of the GitHub repository, click the green `Code` button at the top of the page, and then select `Download ZIP`. After downloading, unzip the archive and open a command line. Navigate to the unzipped folder.
 
-To run the project, we will install `pixi`, which is highly recommended because it ensures compatibility across multiple platforms. However, if you prefer to set up the environment and necessary packages using Anaconda, you can follow [these instructions](./using-conda.md). To install `pixi`, follow the instructions on [https://pixi.sh/latest/](https://pixi.sh/latest/). It is easy to install on Windows, Linux, and macOS via the command line. Once installed, open the command line (if it is not already open) and navigate to the downloaded repository folder (`AI-Magnetism-Session-Mainz-2025`). To install the default environment, which may already support the GPU depending on your system but will definitely work on the CPU, run:
+To run the reposiotry, we will install `pixi`, which is highly recommended because it ensures compatibility across multiple platforms. The package installation via Pixi supports Linux 64-bit, macOS 64-bit (Intel), macOS ARM 64-bit (Apple Silicon), Windows 64-bit, and Linux AArch64. Windows ARM 64 is not supported. To use Pixi on Windows ARM 64, please install it via WSL (Windows Subsystem for Linux) and then install Pixi and the required packages within WSL, as this will work. To install `pixi`, follow the instructions at [https://pixi.sh/latest/](https://pixi.sh/latest/). It is easy to install on Windows, Linux, and macOS via the command line. Once installed, open the command line (if it is not already open) and navigate to the downloaded repository folder (`AI-Magnetism-Session-Mainz-2025`). To install the default environment, which may already support the GPU depending on your system but will definitely work on the CPU, run:
 
 ```
 pixi install
@@ -38,6 +38,8 @@ If you want to ensure that the environment runs on the GPU (if your device has a
 ```
 pixi install --manifest-path gpu_pixi_environment/pixi.toml
 ```
+
+If you prefer to set up the environment and necessary packages using Anaconda, you can follow [these instructions](./using-conda.md).
 
 ## Getting Started in Online Notebooks
 
