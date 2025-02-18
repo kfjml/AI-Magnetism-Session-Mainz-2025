@@ -1,0 +1,44 @@
+repositories:
+- id: '0'
+  data_url: https://zenodo.org/records/10997175/files/public_unet_skyrmion_dataset.zip
+  name: Skyrmion Kerr measurements
+  source: Klaeui Lab
+  description: Fancy skyrmions
+  measurement_method: MOKE
+  measurement_method_class: '1'
+  date: '2024'
+  version: '2'
+  tags:
+  - Skyrmions
+  - Defects
+  data_table:
+    data_table: table_repository_0.csv
+    columns:
+      img_fn:
+        type: filename
+        key: grayscale_image
+      label_fn:
+        type: filename
+        key: label_image
+        legend:
+          Skyrmion:
+          - 255
+          - 0
+          - 0
+          Defect:
+          - 0
+          - 255
+          - 0
+          Background:
+          - 0
+          - 0
+          - 255
+      source_id:
+        type: integer
+        key: source_id_in_repository
+      data_split:
+        type: string
+        key: train_test_val_split
+  additional_metadata:
+    public_unet_skyrmion_dataset/partition.txt:
+      filetype: text

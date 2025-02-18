@@ -1,0 +1,20 @@
+name: skyrmion_unet_gpu
+channels:
+  - conda-forge
+dependencies:
+  - python==3.11
+  - pip
+  - pip:
+      - notebook>=7.3.2,<8
+      - numba>=0.61.0,<0.62
+      - tensorflow[and-cuda]>=2.18.0,<3
+      - albumentations>=2.0.4,<3
+      - matplotlib>=3.10.0,<4
+      - pandas>=2.2.3,<3
+      - chardet>=5.2.0,<6
+      - ipympl>=0.9.6,<0.10
+      - ipywidgets>=8.1.5,<9
+      - opencv-python-headless>=4.11.0.86,<5
+      - wget>=3.2,<4
+      - pyyaml>=6.0.2,<7
+      - pillow>=11.1.0,<12

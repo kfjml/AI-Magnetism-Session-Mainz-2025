@@ -1,0 +1,20 @@
+name: skyrmion_unet
+channels:
+  - conda-forge
+dependencies:
+  - python==3.11
+  - pip
+  - pip:
+      - notebook
+      - numba
+      - tensorflow
+      - albumentations
+      - matplotlib
+      - pandas
+      - chardet
+      - ipympl
+      - ipywidgets
+      - opencv-python-headless
+      - wget
+      - pyyaml
+      - pillow
